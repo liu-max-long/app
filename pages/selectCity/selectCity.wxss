@@ -1,0 +1,42 @@
+/* 当前所在城市 */
+.citydw {
+  width: 300rpx;
+  height: 150rpx;
+  margin-top: 10rpx;
+}
+.citydw text {
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.citydw button {
+  background-color: #e0e0e0;
+  width: 50rpx;
+  color: #3ca53c;
+  margin-left: 50rpx;
+  margin-top: 20rpx;
+}
+/* 热门城市 */
+.cityrm {
+  width: 300rpx;
+}
+.cityrm text {
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.city{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.city button {
+  background-color: #e0e0e0;
+  color: #000;
+  margin-left: 50rpx;
+  margin-top: 20rpx;
+}
+map{
+  margin: 20rpx;
+}

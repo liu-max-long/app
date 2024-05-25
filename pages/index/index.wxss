@@ -1,0 +1,107 @@
+/* pages/index/index.wxss */
+.banner {
+  position: relative;
+}
+
+/* 轮播图响应式处理 */
+.banner swiper {
+  height: 300rpx;
+}
+
+.banner swiper image {
+  width: 100%;
+  height: 300rpx;
+}
+
+.banner .btm {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 24rpx;
+  height: 40rpx;
+  /* 行高 */
+  line-height: 40rpx;
+}
+
+.banner .btm text.fr {
+  margin-right: 20rpx;
+}
+
+.banner .btm text:nth-child(1) {
+  width: 300rpx;
+  /* 行内块元素  可以同时设置宽高 */
+  display: inline-block;
+  /* 单行溢出隐藏wxss代码 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 每日区域的样式 */
+.one-day view image {
+  width: 300rpx;
+  height: 190rpx;
+}
+
+.one-day {
+  /* 弹性盒 */
+  display: flex;
+  /* 水平平均分布 */
+  justify-content: space-around;
+  /* 纵轴居中 */
+  align-items: center;
+  text-align: center;
+  height: 300rpx;
+  font-size: 24rpx;
+  color: #676565;
+}
+
+/* 新闻列表样式 */
+.news_item{
+  margin: 0 20rpx;
+  /* 底部边框线 */
+  border-bottom: 2rpx solid #eee;
+  padding-bottom: 24rpx;
+}
+.news_item .con image{
+  width: 210rpx;
+  height: 140rpx;
+}
+.news_item .con .desc{
+  width: 468rpx;
+  margin-left: 30rpx;
+  font-size: 24rpx;
+  color: #818181;
+  /* ---多行溢出隐藏 */
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  /* --- */
+}
+.news_item .title{
+  font-size: 23rpx;
+  margin-left: 20rpx;
+  line-height: 76rpx;
+  height: 76rpx;
+  color: #000;
+}
+.news_item .con{
+  /* 父集相对定位 */
+  position: relative;
+}
+.news_item .con .read{
+  /* 子集绝对定位 */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 24rpx;
+}
+.news_item .con .read text{
+  color: #f00;
+}

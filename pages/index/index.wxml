@@ -1,0 +1,57 @@
+<!--pages/index/index.wxml-->
+<!-- 轮播图区域 -->
+<view class="banner">
+  <!-- 轮播图组件 -->
+  <swiper autoplay="{{true}}" interval="{{3000}}" circular="{{true}}" bindchange="bannerChangeFn">
+    <swiper-item wx:for="{{banners}}" wx:key="this">
+      <image src="{{item.image}}" />
+    </swiper-item>
+  </swiper>
+  <!-- 透明小条文本 -->
+  <view class="btm">
+    <text>{{banners[currentIdx].title}}</text>
+    <text class="fr">{{currentIdx+1}}/{{banners.length}}</text>
+  </view>
+</view>
+
+<!-- 每日区域 -->
+<view class="one-day">
+  <view>
+    <image src="/images/info_left.jpg" mode="" />
+    <view>
+      每日一测
+    </view>
+  </view>
+  <view>
+    <image src="/images/info_right.jpg" mode="" />
+    <view>
+      每日食谱
+    </view>
+  </view>
+</view>
+
+<!-- 新闻列表区域 -->
+<view class="news_item" data-id="{{item.id}}" bindtap="gotoDetailFn" wx:for="{{newsList}}" wx:key="id">
+<!-- 跳转方式1 添加导航组件navigator跳转 -->
+<!-- 跳转方式2 给新闻列表项 绑定一个点击事件 触发一个函数  bindtap="gotoDetailFn" 
+但是需要我们在函数里面想办法拿到新闻的id（data-id="{{item.id}}"），在函数中就可通过e.currentTarget.dataset.id获取-->
+  <!-- <navigator open-type="navigate" url="/pages/newsDetail/newsDetail?id={{item.id}}"> -->
+  <!-- 标题区域 -->
+  <view class="title">
+    {{item.title}}
+  </view>
+  <!-- 内容区域 -->
+  <view class="con clearfix">
+    <!-- 图片 -->
+    <image class="fl" src="{{item.image}}" mode="" />
+    <!-- 描述 -->
+    <view class="desc fl">
+      {{item.desc}}
+    </view>
+    <!-- 阅读数 -->
+    <view class="read">
+      <text>{{item.readNum}}</text>次阅读
+    </view>
+  </view>
+  <!-- </navigator> -->
+</view>

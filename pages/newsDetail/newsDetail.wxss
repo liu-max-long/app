@@ -1,0 +1,21 @@
+/* pages/newsDetail/newsDetail.wxss */
+.title {
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 22rpx;
+}
+
+image {
+  width: 100%;
+}
+.detail{
+  /* 首行缩进2个位置 */
+  text-indent: 2em;
+  font-size: 30rpx;
+  margin: 0 20rpx;
+  /* 行高 */
+  line-height: 50rpx;
+}

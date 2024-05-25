@@ -1,0 +1,12 @@
+
+<import src="../../common/goods" />
+<block wx:for="{{goodsList}}" wx:key="id">
+<template is="goods_item" data="{{...item}}">
+</template>
+</block>
+<view style="display: flex; position: relative; margin-top: 20rpx; background-color: #e0e0e0; height: 50rpx;">
+   <radio value="" style= "display: flex;position:relative;left: 60rpx; font-style: initial;">全选</radio>
+   <text style="display: flex; position: relative; left: 100rpx; font-style: initial;">合计 {{}}</text>
+   <text style="display :flex; position: relative; font-size: 20rpx; left: 150rpx; top: 10rpx;">不i包含运费</text>
+  <button style="display: flex; width: 183rpx; height: auto; justify-content:flex-start; left: 70rpx; font-size: 25rpx; text-align: left;" type="primary" > 结算 {{}}</button>
+</view>

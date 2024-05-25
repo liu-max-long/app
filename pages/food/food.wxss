@@ -1,0 +1,39 @@
+/* pages/food/food.wxss */
+/* 顶部区域 */
+.top{
+  margin: 12rpx 0;
+  font-size: 24rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+.top .city{
+  width: 92rpx;
+}
+.top .search{
+  width: 630rpx;
+  height: 60rpx;
+  background-color: #f1f1f1;
+  color: #b2b2b2;
+  border-radius: 15rpx;
+}
+
+/* 分类列表区域 */
+.type_list{
+  display: flex;
+  flex-wrap:wrap;
+  height: 300rpx;
+  flex-direction: row;
+  align-content: space-around;
+}
+.type_list .type_item{
+  width: 25%;
+  text-align: center;
+  font-size: 24rpx;
+}
+.type_list .type_item image{
+  width: 84rpx;
+  height: 84rpx;
+}
+
+/* 商品列表区域 */
+@import "../../common/goodsitemp.wxss"

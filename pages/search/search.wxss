@@ -1,0 +1,11 @@
+/* 搜索框 */
+.ssk{
+  padding: 10rpx;
+  background-color: #e0e0e0;
+}
+.ssk input{
+  padding-left: 30rpx;
+  color: #808080;
+}
+/* 商品列表 */
+@import "../../common/goodsitemp.wxss"

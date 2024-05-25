@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/food/food",
+    "pages/cart/cart",
+    "pages/about/about",
+    "pages/newsDetail/newsDetail",
+    "pages/selectCity/selectCity",
+    "pages/search/search",
+    "pages/typeDetail/typeDetail",
+    "pages/goodsDetail/goodsDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#59bb96",
+    "navigationBarTitleText": "食疗商品",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tab2.png",
+        "selectedIconPath": "images/tab6.png"
+      },
+      {
+        "pagePath": "pages/food/food",
+        "text": "食疗坊",
+        "iconPath": "images/tab1.png",
+        "selectedIconPath": "images/tab5.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "images/tab9.png",
+        "selectedIconPath": "images/tab10.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于我",
+        "iconPath": "images/tab4.png",
+        "selectedIconPath": "images/tab8.png"
+      }
+    ]
+  }
+}

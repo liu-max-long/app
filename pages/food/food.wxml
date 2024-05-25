@@ -1,0 +1,31 @@
+<!--pages/food/food.wxml-->
+<!-- 顶部区域 -->
+<view class="top clearfix">
+  <view class="city fl" catchtap="gotoSelectCityFn">
+    {{cityname}}
+  </view>
+  <view class="search fl">
+    <navigator open-type="navigate" url="/pages/search/search">
+      请输入您要搜索的内容
+    </navigator>
+  </view>
+</view>
+
+<!-- 分类列表区域 -->
+<view class="type_list"> 
+  <view class="type_item" bindtap="gotoTypeDetail" wx:for="{{list}}" wx:key="food" data-id="{{item.type}}">
+    <image src="{{item.image}}" mode="" />
+    <view>
+      {{item.foodname}}
+    </view>
+  </view>
+</view>
+
+<!-- 商品列表区域 -->
+<import src="../../common/goodsitemp" />
+<block wx:for="{{goodsList}}" wx:key="id">
+<template is="goods_item" data="{{...item}}"></template>
+</block>
+<!-- <button type="primary" bindtap="getMoreFn">
+双击加载更多....
+</button> -->

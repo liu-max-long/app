@@ -1,0 +1,17 @@
+<template name="goods_item">
+  <view class="goods_item clearfix" bindtap="gotogoodsDetailFn" data-id="{{id}}">
+  <image class="fl" src="{{pic}}" mode="" />
+  <view class="con fl">
+    <view class="title">
+      {{name}}
+    </view>
+    <view class="desc">
+      {{description}}
+    </view>
+    <view class="info">
+      <text class="price">￥{{price}}</text>
+      <text class="buyNum">{{buynum}}人付款</text>
+    </view>
+  </view>
+</view>
+</template>

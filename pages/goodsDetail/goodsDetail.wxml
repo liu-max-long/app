@@ -1,0 +1,32 @@
+<view class="goods">
+  <!-- 图片 -->
+  <view class="goodsdetail">
+    <image src="/images/banner.jpg" mode="" />
+  </view>
+  <!-- 食品名称 -->
+  <view class="goodsname">
+    <text>美食-甜豆干</text>
+  </view>
+  <!--  评论 -->
+  <view class="comment">
+    <text>暂无评论</text>
+  </view>
+  <!--  商品详情 -->
+  <view class="details">
+    <text>商品详情</text>
+  </view>
+  <!-- 图片 -->
+  <view class="goodsdetail">
+    <image src="/images/item-2.jpg" mode="" />
+  </view>
+</view>
+<!-- 加入购物车 -->
+<view class="buycar">
+    <view class="car">
+      <image src="/images/cart.png" mode="" />
+    </view>
+    <view class="carbtn">
+      <button size="mini" type="warn" style="border-radius: 10rpx 0 0 10rpx; background-color: red; color: white;">加入购物车</button>
+      <button size="mini" style="border-radius: 0 10rpx 10rpx 0; color: white; background-color: #fbc3ce;">直接购买</button>
+  </view>
+</view>

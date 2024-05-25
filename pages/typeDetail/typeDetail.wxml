@@ -1,0 +1,5 @@
+<!-- 商品列表 -->
+<import src="../../common/goodsitemp" />
+<block wx:for="{{goodsList}}" wx:key="id">
+<template is="goods_item" data="{{...item}}"></template>
+</block>

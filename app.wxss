@@ -1,0 +1,25 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+/* 设置一些公用样式 比如消除浮动 */
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 左浮动 */
+.fl{
+  float: left;
+}
+/* 有浮动 */
+.fr{
+  float: right;
+}
+

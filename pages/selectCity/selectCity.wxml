@@ -1,0 +1,16 @@
+<view class="citydw">
+  <text>当前所在城市</text>
+  <button size="mini" bindtap="openMapFn">定位</button>
+</view>
+<view class="cityrm">
+  <text class="">热门城市</text>
+</view>
+<view class="city">
+  <view wx:for="{{citylist}}" wx:key="id" bindtap="gotofoodFn" data-city="{{item}}">
+    <button size="mini">{{item}}</button>
+  </view>
+</view>
+<view wx:if="{{flag==true}}">
+  <map longitude="112.892573" latitude="22.900047">
+</map>
+</view>

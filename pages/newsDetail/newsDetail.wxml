@@ -1,0 +1,8 @@
+<!--pages/newsDetail/newsDetail.wxml-->
+<view class="title">
+  {{newsObj.title}}
+</view>
+<image src="{{newsObj.image}}" mode="" />
+<view class="detail">
+  {{newsObj.detail}}
+</view>

@@ -1,0 +1,23 @@
+<template name="goods_item">
+  <view class="goods_item clearfix" bindtap="gotogoodsDetailFn" data-id="{{id}} " style="display: flex; width: 80%;">
+  <block>
+    <radio style="display: flex;justify-content: center;"></radio>
+  </block>
+  <image class="fl" src="{{pic}}" mode="" />
+  <view class="con fl">
+    <view class="title">
+      {{name}}
+    </view>
+    <view class="desc">
+      {{description}}
+    </view>
+    <view class="info">
+      <text class="price" style="display: flex; position: relative; top: 35rpx;">￥{{price}}</text>
+      <view style="display: flex; position: relative; left: 170rpx;">
+       <text style="width: 35rpx; height: 35rpx; background-color: white; border: 1rpx solid black; display: flex;justify-content: center;">+</text> <text style="width: 35rpx; height: 35rpx; display: flex; justify-content: center;">1</text>    <text style="width: 35rpx; height: 35rpx; background-color: black; border: 1rpx solid black; display: flex;justify-content: center; color: white;">-</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+</template>
